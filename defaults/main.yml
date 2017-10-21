@@ -1,0 +1,3 @@
+---
+mysql_packages:
+  - http://repo.mysql.com/mysql57-community-release-el7.rpm
