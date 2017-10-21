@@ -11,6 +11,7 @@ RedHat 6, 7
 Role Variables
 --------------
 
+`mysql_repo: url` url of the mysql repo rpm configurations.
 `mysql_packages: []` list of packages to install for mysql.
 
 Dependencies
