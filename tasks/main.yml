@@ -1,6 +1,7 @@
 ---
-- import_task: "{{ ansible_os_family }}-mysql.yml"
+- include_tasks: redhat-mysql.yml
+  when: ansible_os_family == 'RedHat'
 
-- import_task: setup-mysql.yml
-- import_task: secure-mysql.yml
-- import_task: setup-mysql-databases.yml
+- include_tasks: setup-mysql.yml
+- include_tasks: secure-mysql.yml
+- include_tasks: setup-mysql-databases.yml

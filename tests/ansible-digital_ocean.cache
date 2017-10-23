@@ -1,0 +1,300 @@
+{
+  "data": {
+    "droplets": [
+      {
+        "backup_ids": [], 
+        "created_at": "2017-09-30T20:08:32Z", 
+        "disk": 20, 
+        "features": [], 
+        "id": 64420979, 
+        "image": {
+          "created_at": "2017-09-26T18:36:06Z", 
+          "distribution": "CentOS", 
+          "id": 28108256, 
+          "min_disk_size": 20, 
+          "name": "7.4.1708 x64", 
+          "public": true, 
+          "regions": [
+            "nyc1", 
+            "sfo1", 
+            "nyc2", 
+            "ams2", 
+            "sgp1", 
+            "lon1", 
+            "nyc3", 
+            "ams3", 
+            "fra1", 
+            "tor1", 
+            "sfo2", 
+            "blr1"
+          ], 
+          "size_gigabytes": 0.38, 
+          "slug": "centos-7-x64", 
+          "type": "snapshot"
+        }, 
+        "kernel": null, 
+        "locked": false, 
+        "memory": 512, 
+        "name": "bg101", 
+        "networks": {
+          "v4": [
+            {
+              "gateway": "165.227.112.1", 
+              "ip_address": "165.227.115.200", 
+              "netmask": "255.255.240.0", 
+              "type": "public"
+            }
+          ], 
+          "v6": []
+        }, 
+        "next_backup_window": null, 
+        "region": {
+          "available": true, 
+          "features": [
+            "private_networking", 
+            "backups", 
+            "ipv6", 
+            "metadata", 
+            "install_agent", 
+            "storage"
+          ], 
+          "name": "New York 3", 
+          "sizes": [
+            "512mb", 
+            "1gb", 
+            "2gb", 
+            "c-2", 
+            "4gb", 
+            "c-4", 
+            "8gb", 
+            "c-8", 
+            "16gb", 
+            "m-16gb", 
+            "c-16", 
+            "32gb", 
+            "m-32gb", 
+            "48gb", 
+            "c-32", 
+            "m-64gb", 
+            "64gb", 
+            "m-128gb", 
+            "m-224gb"
+          ], 
+          "slug": "nyc3"
+        }, 
+        "size": {
+          "available": true, 
+          "disk": 20, 
+          "memory": 512, 
+          "price_hourly": 0.00744, 
+          "price_monthly": 5.0, 
+          "regions": [
+            "ams2", 
+            "ams3", 
+            "blr1", 
+            "fra1", 
+            "lon1", 
+            "nyc1", 
+            "nyc2", 
+            "nyc3", 
+            "sfo1", 
+            "sfo2", 
+            "sgp1", 
+            "tor1"
+          ], 
+          "slug": "512mb", 
+          "transfer": 1.0, 
+          "vcpus": 1
+        }, 
+        "size_slug": "512mb", 
+        "snapshot_ids": [], 
+        "status": "active", 
+        "tags": [
+          "ghost_blog"
+        ], 
+        "vcpus": 1, 
+        "volume_ids": []
+      }
+    ]
+  }, 
+  "inventory": {
+    "64420979": [
+      "165.227.115.200"
+    ], 
+    "_meta": {
+      "hostvars": {
+        "165.227.115.200": {
+          "do_backup_ids": [], 
+          "do_created_at": "2017-09-30T20:08:32Z", 
+          "do_disk": 20, 
+          "do_features": [], 
+          "do_id": 64420979, 
+          "do_image": {
+            "created_at": "2017-09-26T18:36:06Z", 
+            "distribution": "CentOS", 
+            "id": 28108256, 
+            "min_disk_size": 20, 
+            "name": "7.4.1708 x64", 
+            "public": true, 
+            "regions": [
+              "nyc1", 
+              "sfo1", 
+              "nyc2", 
+              "ams2", 
+              "sgp1", 
+              "lon1", 
+              "nyc3", 
+              "ams3", 
+              "fra1", 
+              "tor1", 
+              "sfo2", 
+              "blr1"
+            ], 
+            "size_gigabytes": 0.38, 
+            "slug": "centos-7-x64", 
+            "type": "snapshot"
+          }, 
+          "do_kernel": null, 
+          "do_locked": false, 
+          "do_memory": 512, 
+          "do_name": "bg101", 
+          "do_networks": {
+            "v4": [
+              {
+                "gateway": "165.227.112.1", 
+                "ip_address": "165.227.115.200", 
+                "netmask": "255.255.240.0", 
+                "type": "public"
+              }
+            ], 
+            "v6": []
+          }, 
+          "do_next_backup_window": null, 
+          "do_region": {
+            "available": true, 
+            "features": [
+              "private_networking", 
+              "backups", 
+              "ipv6", 
+              "metadata", 
+              "install_agent", 
+              "storage"
+            ], 
+            "name": "New York 3", 
+            "sizes": [
+              "512mb", 
+              "1gb", 
+              "2gb", 
+              "c-2", 
+              "4gb", 
+              "c-4", 
+              "8gb", 
+              "c-8", 
+              "16gb", 
+              "m-16gb", 
+              "c-16", 
+              "32gb", 
+              "m-32gb", 
+              "48gb", 
+              "c-32", 
+              "m-64gb", 
+              "64gb", 
+              "m-128gb", 
+              "m-224gb"
+            ], 
+            "slug": "nyc3"
+          }, 
+          "do_size": {
+            "available": true, 
+            "disk": 20, 
+            "memory": 512, 
+            "price_hourly": 0.00744, 
+            "price_monthly": 5.0, 
+            "regions": [
+              "ams2", 
+              "ams3", 
+              "blr1", 
+              "fra1", 
+              "lon1", 
+              "nyc1", 
+              "nyc2", 
+              "nyc3", 
+              "sfo1", 
+              "sfo2", 
+              "sgp1", 
+              "tor1"
+            ], 
+            "slug": "512mb", 
+            "transfer": 1.0, 
+            "vcpus": 1
+          }, 
+          "do_size_slug": "512mb", 
+          "do_snapshot_ids": [], 
+          "do_status": "active", 
+          "do_tags": [
+            "ghost_blog"
+          ], 
+          "do_vcpus": 1, 
+          "do_volume_ids": []
+        }
+      }
+    }, 
+    "all": {
+      "hosts": [
+        "165.227.115.200"
+      ], 
+      "vars": {}
+    }, 
+    "bg101": [
+      "165.227.115.200"
+    ], 
+    "distro_CentOS": {
+      "hosts": [
+        "165.227.115.200"
+      ], 
+      "vars": {}
+    }, 
+    "ghost_blog": {
+      "hosts": [
+        "165.227.115.200"
+      ], 
+      "vars": {}
+    }, 
+    "image_28108256": {
+      "hosts": [
+        "165.227.115.200"
+      ], 
+      "vars": {}
+    }, 
+    "image_7.4.1708_x64": {
+      "hosts": [
+        "165.227.115.200"
+      ], 
+      "vars": {}
+    }, 
+    "image_centos-7-x64": {
+      "hosts": [
+        "165.227.115.200"
+      ], 
+      "vars": {}
+    }, 
+    "region_nyc3": {
+      "hosts": [
+        "165.227.115.200"
+      ], 
+      "vars": {}
+    }, 
+    "size_512mb": {
+      "hosts": [
+        "165.227.115.200"
+      ], 
+      "vars": {}
+    }, 
+    "status_active": {
+      "hosts": [
+        "165.227.115.200"
+      ], 
+      "vars": {}
+    }
+  }
+}

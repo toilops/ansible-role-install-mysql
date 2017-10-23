@@ -92,12 +92,4 @@ mysql_innodb_file_format: "barracuda"
 # mysqldump settings.
 mysql_mysqldump_max_allowed_packet: "32M"
 
-# Includes
-{% if mysql_config_include_files | length %}
-# * IMPORTANT: Additional settings that can override those from this file!
-#   The files must end with '.cnf', otherwise they'll be ignored.
-#
-!includedir {{ mysql_config_include_dir }}
-{% endif %}
-
 ### End: MySQL Tuning ###
