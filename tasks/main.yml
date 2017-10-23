@@ -1,9 +1,6 @@
 ---
-- name: Install mysql
-  yum:
-    name: "{{ item }}"
-    state: present
-    update_cache: yes
-  with_items:
-    - "{{ mysql_repo }}"
-    - "{{ mysql_packages }}"
+- import_task: "{{ ansible_os_family }}-mysql.yml"
+
+- import_task: setup-mysql.yml
+- import_task: secure-mysql.yml
+- import_task: setup-mysql-databases.yml

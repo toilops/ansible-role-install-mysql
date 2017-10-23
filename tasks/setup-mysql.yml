@@ -1,0 +1,38 @@
+---
+- name: Configure MySQL
+  template:
+    src: my.cnf.j2
+    dest: "{{ mysql_config_file }}"
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart mysql
+
+- name: Create mysql directories
+  file:
+    state: directory
+    path: "{{ item }}"
+    owner: mysql
+    group: mysql
+    mode: 0755
+  with_items:
+    - "{{ mysql_dirs }}"
+
+- name: Create mysql relates files
+  file:
+    state: touch
+    path: "{{ item }}"
+    owner: mysql
+    group: mysql
+    mode: 0755
+  with_items:
+    - "{{ mysql_socket }}"
+    - "{{ mysql_pid_file }}"
+    - "{{ mysql_log_error }}"
+    - "{{ mysql_log }}"
+
+- name: Enable MySQL on boot and start.
+  service:
+    name: "{{ mysql_daemon }}"
+    state: started
+    enabled: "{{ mysql_enable_on_boot }}"
